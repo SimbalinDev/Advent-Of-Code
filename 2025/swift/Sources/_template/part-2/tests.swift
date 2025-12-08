@@ -1,3 +1,5 @@
+import Lib
+
 // Exspected Format: [(Input, Output)]
 let testCases: [(Int, Int)] = []
 

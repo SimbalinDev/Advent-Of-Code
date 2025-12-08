@@ -1,7 +1,18 @@
 import Lib
 
 // Exspected Format: [(Input, Output)]
-let testCases: [(Int, Int)] = []
+let testCases: [([String], Int)] = [
+    (["..@@.@@@@.",
+      "@@@.@.@.@@",
+      "@@@@@.@.@@",
+      "@.@@@@..@.",
+      "@@.@@@@.@@",
+      ".@@@@@@@.@",
+      ".@.@.@.@@@",
+      "@.@@@.@@@@",
+      ".@@@@@@@@.",
+      "@.@.@@@.@."], 43)
+]
 
 // Test runner
 func runTests(_ specificIndex: Int = -1) {
