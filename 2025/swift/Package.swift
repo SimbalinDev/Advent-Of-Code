@@ -15,6 +15,8 @@ let package = Package(
         .executable(name: "day03p2", targets: ["Day03P2"]),
         .executable(name: "day04p1", targets: ["Day04P1"]),
         .executable(name: "day04p2", targets: ["Day04P2"]),
+        .executable(name: "day05p1", targets: ["Day05P1"]),
+        .executable(name: "day05p2", targets: ["Day05P2"]),
 
         .library(name: "Lib", targets: ["Lib"]),
     ],
@@ -63,6 +65,16 @@ let package = Package(
             name: "Day04P2",
             dependencies: ["Lib"],
             path: "Sources/Day04/part-2",
+        ),
+        .executableTarget(
+            name: "Day05P1",
+            dependencies: ["Lib"],
+            path: "Sources/Day05/part-1",
+        ),
+        .executableTarget(
+            name: "Day05P2",
+            dependencies: ["Lib"],
+            path: "Sources/Day05/part-2",
         ),
     ]
 

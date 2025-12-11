@@ -1,12 +1,14 @@
 import Lib
 
 struct Test {
-    var data: Int;
+    var data: [String];
     var exspected: Int;
 }
 
 // Exspected Format: [(Input, Output)]
-let testCases: [Test] = []
+let testCases: [Test] = [
+    Test(data: ["3-5", "10-14", "16-20", "12-18", "1", "5", "8", "11", "17", "32"], exspected: 3)
+]
 
 // Test runner
 func runTests(_ specificIndex: Int = -1) -> Bool {
